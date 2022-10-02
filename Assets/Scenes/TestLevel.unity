@@ -135,6 +135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 903519051}
     m_Modifications:
+    - target: {fileID: 165758, guid: aa4459760693800428bd4e9e9ebabad3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 175016, guid: aa4459760693800428bd4e9e9ebabad3, type: 3}
       propertyPath: m_Name
       value: Mummy_3_Axe
@@ -1146,6 +1150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mummy_1_Sword_Shield
       objectReference: {fileID: 0}
+    - target: {fileID: 180832, guid: 45f49c7ca97226a47b9b389e4e63d1f0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 486244, guid: 45f49c7ca97226a47b9b389e4e63d1f0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1217,6 +1225,10 @@ PrefabInstance:
     - target: {fileID: 143028, guid: 044a30645aa19474e83949f57cf35ac8, type: 3}
       propertyPath: m_Name
       value: Mummy_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147478, guid: 044a30645aa19474e83949f57cf35ac8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400982, guid: 044a30645aa19474e83949f57cf35ac8, type: 3}
       propertyPath: m_RootOrder
