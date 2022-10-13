@@ -72,6 +72,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  maxSpeed: 6
 --- !u!195 &2942136465394567247
 NavMeshAgent:
   m_ObjectHideFlags: 0
