@@ -5,17 +5,25 @@ using UnityEngine;
 public class ItemPickUp : MonoBehaviour
 {
     public Item Item;
+    public RPG.Combat.Fighter fighter;
 
 
     void Pickup()
     {
+
+        //Equip Sword if item is a Sword
+        if (Item.itemName == "Sword")
+        { 
+        fighter.EquipSword();
+        }
+
         //Add item to inventory
         InventoryManager.Instance.Add(Item);
 
         //Destroy pickable item
         Destroy(gameObject);
 
-        //update inventory if iopen
+        //update inventory if open
         InventoryManager.Instance.ListItems();
 
     }
@@ -25,6 +33,9 @@ public class ItemPickUp : MonoBehaviour
     {
         Pickup();
     }
+
+
+    //test for picking up items on contact, dosnt work yet ^^
 
     /*void OnCollisionEnter(Collision collision)
     {

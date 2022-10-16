@@ -20,6 +20,8 @@ namespace RPG.Combat
 
         float timeSinceLastAttack = Mathf.Infinity;
 
+        public bool SwordIsEquiped;
+
 
         private void Start()
         {
@@ -45,9 +47,21 @@ namespace RPG.Combat
 
         }
 
+        public void EquipSword()
+        {
+            //Events called when sword is picked up
+            SwordIsEquiped = true;
+            SpawnWeapon();
+        }
+
         private void SpawnWeapon()
         {
-            Instantiate(weaponPrefab, handTransform);
+            //Make sword appears
+            if (SwordIsEquiped == true)
+            {
+                Instantiate(weaponPrefab, handTransform);
+                //Change combat stats here?
+            }
         }
 
 
