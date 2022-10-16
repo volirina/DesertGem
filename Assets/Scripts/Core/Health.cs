@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RPG.Core
 {
     public class Health : MonoBehaviour
     {
-        [SerializeField] float healthPoints = 100f;
+        [SerializeField] public float healthPoints = 100f;
+        
+        public float MaxhealthPoints = 100f;
 
         bool isDead = false;
+
 
         public bool IsDead()
         {
