@@ -7,6 +7,8 @@ namespace RPG.Core
 {
     public class Health : MonoBehaviour
     {
+        public static Health Instance;
+
         [SerializeField] public float healthPoints = 100f;
         
         public float MaxhealthPoints = 100f;
@@ -19,6 +21,11 @@ namespace RPG.Core
             return isDead;
         }
 
+        private void Awake()
+        {
+            Instance = this;
+        }
+
         public void TakeDamage(float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
@@ -26,6 +33,11 @@ namespace RPG.Core
             {
                 Die();
             }
+        }
+
+        public void IncreaseHealth(int value)
+        {
+            healthPoints += value;
         }
 
         private void Die()

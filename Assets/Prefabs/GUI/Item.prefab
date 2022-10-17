@@ -223,6 +223,8 @@ GameObject:
   - component: {fileID: 4235113795555154152}
   - component: {fileID: 4235113795555154155}
   - component: {fileID: 4235113795555154154}
+  - component: {fileID: 7565393687751662933}
+  - component: {fileID: -498781126926819597}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -333,4 +335,45 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4235113795555154155}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 7eb1a02ff98b43f459318efb2692dc21, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7565393687751662933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235113795555154156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7eb1a02ff98b43f459318efb2692dc21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: {fileID: 0}
+  playerHealth: {fileID: 0}
+--- !u!114 &-498781126926819597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4235113795555154156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1c6b3cd9b1361c46b6a7d90be45237d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items: {fileID: 11400000, guid: b258138034607d34697338341c3f2dda, type: 2}
+  playerHealth: {fileID: 0}
+  inventoryItemController: {fileID: 0}

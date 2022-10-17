@@ -8,15 +8,17 @@ public class ItemPickUp : MonoBehaviour
     public RPG.Combat.Fighter fighter;
     public CircleEquipment circleEquipment;
 
-
+    //Main event when picking an item
     void Pickup()
     {
 
         //Equip Sword if item is a Sword
         if (Item.itemName == "Sword")
         { 
+
         fighter.EquipSword();
         circleEquipment.ChangeSwordIcon();
+
         }
 
         //Add item to inventory
