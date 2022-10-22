@@ -21,6 +21,13 @@ public class ItemPickUp : MonoBehaviour
 
         }
 
+        //Turn true the bool for the key
+        if (Item.itemName == "Key")
+        {
+            fighter.HavetheKey = true;
+
+        }
+
         //Add item to inventory
         InventoryManager.Instance.Add(Item);
 

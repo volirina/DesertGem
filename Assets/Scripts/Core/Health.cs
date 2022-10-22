@@ -46,6 +46,7 @@ namespace RPG.Core
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+            GetComponent<EnnemyDeath>().IncrementDeathCounter();
         }
     }
 

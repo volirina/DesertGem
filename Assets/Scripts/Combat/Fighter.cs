@@ -21,6 +21,8 @@ namespace RPG.Combat
         float timeSinceLastAttack = Mathf.Infinity;
 
         public bool SwordIsEquiped;
+        public bool HavetheKey;
+        public int EnnemiesKilled;
 
 
         private void Start()
