@@ -6,5 +6,11 @@ public class GroundButton : MonoBehaviour
 {    private void OnMouseDown()
     {
         //add 1 to the final button counter
+        //activate particle system
+    }
+
+    void Reset()
+    {
+        //deactivate particle System
     }
 }
