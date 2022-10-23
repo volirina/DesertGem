@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ItemPickUp : MonoBehaviour
 {
@@ -26,6 +27,11 @@ public class ItemPickUp : MonoBehaviour
         {
             fighter.HavetheKey = true;
 
+        }
+
+        if(Item.itemName == "Gem")
+        {
+            SceneManager.LoadScene("Win");
         }
 
         //Add item to inventory

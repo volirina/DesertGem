@@ -41,7 +41,7 @@ namespace RPG.Controller
 
         private void Update()
         {
-            if (health.IsDead()) { return; }
+            if (health.IsDead()) {}
             if (InAttachRangeOfPlayer() && fighter.CanAttack(player))
             {
                 
