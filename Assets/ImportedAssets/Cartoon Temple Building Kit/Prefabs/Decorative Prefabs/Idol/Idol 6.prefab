@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000010777763524}
   - component: {fileID: 33000012055031984}
   - component: {fileID: 23000011529738888}
+  - component: {fileID: 1405643186117298335}
   m_Layer: 0
   m_Name: Idol 6
   m_TagString: Untagged
@@ -83,3 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &1405643186117298335
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010774182382}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.241, y: 11.1050005, z: 4.241}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 11.1050005, z: 0}
+  m_TimeToStationary: 0.5

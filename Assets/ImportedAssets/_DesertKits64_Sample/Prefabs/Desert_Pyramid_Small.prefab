@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000012622637596}
   - component: {fileID: 33000014039978672}
   - component: {fileID: 23000013986466112}
+  - component: {fileID: 3512651993858364589}
   m_Layer: 0
   m_Name: Desert_Pyramid_Small
   m_TagString: Untagged
@@ -83,3 +84,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!208 &3512651993858364589
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000014225362746}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.99700004, y: 0.39000002, z: 0.99700004}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.39000002, z: 0}
+  m_TimeToStationary: 0.5

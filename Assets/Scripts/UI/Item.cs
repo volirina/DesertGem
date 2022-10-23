@@ -18,6 +18,7 @@ public class Item : ScriptableObject
     {
         Potion,
         Sword,
-        Key
+        Key,
+        Gem
     }
 }
