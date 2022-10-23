@@ -9,13 +9,10 @@ public class Platform : MonoBehaviour
 
     void Update()
     {
-        MoveForPlayer();
-    }
-    void MoveForPlayer()
-    {
-        while(transform.position != finalPos)
+        while (transform.position != finalPos)
         {
-            transform.Translate(0,0,2);
+            transform.Translate(0, 0, 2);
         }
     }
+
 }
