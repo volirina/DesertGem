@@ -6,6 +6,7 @@ public class Ennemies_OpenDoor : MonoBehaviour
 {
     public MovingPlatform movingPlatform;
     public RPG.Combat.Fighter fighter;
+    public AudioSource audioSource;
 
     // Condition on mouse click
     private void Update()
@@ -14,7 +15,7 @@ public class Ennemies_OpenDoor : MonoBehaviour
         {
             movingPlatform.TurnOn();
             Destroy(gameObject);
-
+            audioSource.Play();
         }
 
     }

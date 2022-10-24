@@ -45,10 +45,11 @@ namespace RPG.Core
         {
             if(isDead) { return; }
             isDead = true;
-            dieSFX.Play();
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+            dieSFX.Play();
             GetComponent<EnnemyDeath>().IncrementDeathCounter();
+
         }
     }
 

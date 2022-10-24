@@ -54,16 +54,4 @@ public class ItemPickUp : MonoBehaviour
     }
 
 
-    //test for picking up items on contact, dosnt work yet ^^
-
-    /*void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Pickup();
-        }
-
-    }*/
-
-
 }
