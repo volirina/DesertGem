@@ -23,6 +23,9 @@ namespace RPG.Combat
         public bool SwordIsEquiped;
         public bool HavetheKey;
         public int EnnemiesKilled;
+        public AudioSource killSwordSFX;
+        public AudioSource hurtSFX;
+
 
 
         private void Start()
@@ -91,6 +94,7 @@ namespace RPG.Combat
         {
             if(target == null) { return; }
             target.TakeDamage(weaponDamage);
+            killSwordSFX.Play();
         }
 
         //Animation Event

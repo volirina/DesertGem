@@ -14,6 +14,7 @@ namespace RPG.Core
         public float MaxhealthPoints = 100f;
 
         bool isDead = false;
+        public AudioSource dieSFX;
 
 
         public bool IsDead()
@@ -44,6 +45,7 @@ namespace RPG.Core
         {
             if(isDead) { return; }
             isDead = true;
+            dieSFX.Play();
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
             GetComponent<EnnemyDeath>().IncrementDeathCounter();

@@ -8,6 +8,7 @@ public class ItemPickUp : MonoBehaviour
     public Item Item;
     public RPG.Combat.Fighter fighter;
     public CircleEquipment circleEquipment;
+    public AudioSource pickupSFX;
 
     //Main event when picking an item
     void Pickup()
@@ -48,6 +49,7 @@ public class ItemPickUp : MonoBehaviour
     // Condition for pickup. Currently on mouse click
     private void OnMouseDown()
     {
+        pickupSFX.Play();
         Pickup();
     }
 
