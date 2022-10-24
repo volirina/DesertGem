@@ -36,7 +36,11 @@ public class FinalButton : MonoBehaviour
 
     void DeactivateButton()
     {
+<<<<<<< HEAD
         //GroundButton.Reset();
+=======
+        /*GroundButton.Reset();*/
+>>>>>>> ea865ddcc1536c54b2e8a8bb9f7c9dc98b3c1215
     }
 }
 
